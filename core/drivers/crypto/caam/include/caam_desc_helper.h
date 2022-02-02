@@ -261,7 +261,7 @@ static inline void dump_desc(uint32_t *desc)
 	 FIFO_STORE_LENGTH(len))
 
 /*
- * RNG State Handle instantation operation for sh ID
+ * RNG State Handle instantiation operation for sh ID
  */
 #define RNG_SH_INST(sh)                                                        \
 	(CMD_OP_TYPE | OP_TYPE(CLASS1) | OP_ALGO(RNG) | ALGO_RNG_SH(sh) |      \

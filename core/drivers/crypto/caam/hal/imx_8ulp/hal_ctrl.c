@@ -2,7 +2,7 @@
 /*
  * Copyright 2021 NXP
  *
- * Brief   CAAM Controller Hardware Abstration Layer.
+ * Brief   CAAM Controller Hardware Abstraction Layer.
  *         Implementation of primitives to access HW.
  */
 #include <imx.h>

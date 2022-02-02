@@ -133,7 +133,7 @@ void tzc_region_enable(uint8_t region)
 }
 
 /*
- * Dump info when TZC380 catchs an unallowed access with TZC
+ * Dump info when TZC380 catches an unallowed access with TZC
  * interrupt enabled.
  */
 void tzc_fail_dump(void)

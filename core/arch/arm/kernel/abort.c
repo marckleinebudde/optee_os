@@ -481,7 +481,7 @@ static enum fault_type get_fault_type(struct abort_info *ai)
 		if (abort_is_user_exception(ai))
 			return FAULT_TYPE_USER_MODE_PANIC;
 		abort_print_error(ai);
-		panic("[abort] alignement fault!  (trap CPU)");
+		panic("[abort] alignment fault!  (trap CPU)");
 		break;
 
 	case CORE_MMU_FAULT_ACCESS_BIT:

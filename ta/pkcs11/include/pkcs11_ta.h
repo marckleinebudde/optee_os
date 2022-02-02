@@ -76,7 +76,7 @@ enum pkcs11_ta_cmd {
 	 * [out] memref[2] = 32bit array slot_ids[slot counts]
 	 *
 	 * The TA instance may represent several PKCS#11 slots and
-	 * associated tokens. This commadn reports the IDs of embedded tokens.
+	 * associated tokens. This command reports the IDs of embedded tokens.
 	 * This command relates the PKCS#11 API function C_GetSlotList().
 	 */
 	PKCS11_CMD_SLOT_LIST = 1,

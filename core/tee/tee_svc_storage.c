@@ -23,7 +23,7 @@
 #include <tee/tee_svc_storage.h>
 #include <trace.h>
 
-/* Header of GP formated secure storage files */
+/* Header of GP formatted secure storage files */
 struct tee_svc_storage_head {
 	uint32_t attr_size;
 	uint32_t keySize;

@@ -17,7 +17,7 @@ bool ldelf_handle_svc(struct thread_svc_regs *regs);
 /*
  * Called from the assembly functions syscall_sys_return() and
  * syscall_panic() to update the register values in the struct
- * thread_svc_regs to return back to TEE Core from an erlier call to
+ * thread_svc_regs to return back to TEE Core from an earlier call to
  * thread_enter_user_mode().
  */
 uint32_t tee_svc_sys_return_helper(uint32_t ret, bool panic,

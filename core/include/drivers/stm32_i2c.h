@@ -243,7 +243,7 @@ bool stm32_i2c_is_device_ready(struct i2c_handle_s *hi2c, uint32_t dev_addr,
 
 /*
  * Suspend I2C bus.
- * Bus owner is reponsible for calling stm32_i2c_suspend().
+ * Bus owner is responsible for calling stm32_i2c_suspend().
  *
  * @hi2c: Reference to I2C bus handle structure
  */
@@ -251,7 +251,7 @@ void stm32_i2c_suspend(struct i2c_handle_s *hi2c);
 
 /*
  * Resume I2C bus.
- * Bus owner is reponsible for calling stm32_i2c_resume().
+ * Bus owner is responsible for calling stm32_i2c_resume().
  *
  * @hi2c: Reference to I2C bus handle structure
  */

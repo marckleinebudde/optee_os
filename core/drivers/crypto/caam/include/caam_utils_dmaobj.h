@@ -172,7 +172,7 @@ TEE_Result caam_dmaobj_sgtbuf_inout_build(struct caamdmaobj *input,
  *
  * @input     CAAM DMA object input
  * @output    CAAM DMA object output
- * @min_size  Mimimum length to allocate
+ * @min_size  Minimum length to allocate
  */
 TEE_Result caam_dmaobj_prepare(struct caamdmaobj *input,
 			       struct caamdmaobj *output, size_t min_size);

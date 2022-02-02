@@ -2,7 +2,7 @@
 /*
  * Copyright 2018-2020 NXP
  *
- * Brief   CAAM Controller Hardware Abstration Layer header.
+ * Brief   CAAM Controller Hardware Abstraction Layer header.
  */
 #ifndef __CAAM_HAL_CTRL_H__
 #define __CAAM_HAL_CTRL_H__

@@ -1368,7 +1368,7 @@ static TEE_Result write_req(uint16_t dev_id, uint16_t blk_idx,
 out_of_retries:
 	rpmb_dead = true;
 	/*
-	 * We're using this error code to cause an eventuall calling TA to
+	 * We're using this error code to cause an eventually calling TA to
 	 * panic since we don't know if the data to be written has been
 	 * committed to storage or not.
 	 */

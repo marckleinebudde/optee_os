@@ -244,7 +244,7 @@
  * Matrix Slaves ID
  */
 /* MATRIX0(H64MX) Matrix Slaves */
-/* Bridge from H64MX to AXIMX (Internal ROM, Cryto Library, PKCC RAM) */
+/* Bridge from H64MX to AXIMX (Internal ROM, Crypto Library, PKCC RAM) */
 #define H64MX_SLAVE_BRIDGE_TO_AXIMX	0
 #define H64MX_SLAVE_PERI_BRIDGE		1	/* H64MX Peripheral Bridge */
 #define H64MX_SLAVE_DDR2_PORT_0		2	/* DDR2 Port0-AESOTF */

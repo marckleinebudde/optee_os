@@ -280,7 +280,7 @@ static const struct i2c_spec_s i2c_specs[] = {
  * @mode: Communication mode, one of I2C_MODE_(MASTER|MEM)
  * @mem_addr: Target memory cell accessed in device (memory mode)
  * @mem_addr_size: Byte size of the memory cell address (memory mode)
- * @timeout_ms: Timeout in millisenconds for the request
+ * @timeout_ms: Timeout in milliseconds for the request
  */
 struct i2c_request {
 	uint32_t dev_addr;

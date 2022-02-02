@@ -24,7 +24,7 @@
 #define OPTEE_MSG_RPC_CMD_BENCH_REG_NEW		U(0)
 #define OPTEE_MSG_RPC_CMD_BENCH_REG_DEL		U(1)
 
-/* OP-TEE susbsystems ids */
+/* OP-TEE subsystems ids */
 #define TEE_BENCH_CLIENT	U(0x10000000)
 #define TEE_BENCH_KMOD		U(0x20000000)
 #define TEE_BENCH_CORE		U(0x30000000)

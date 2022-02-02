@@ -63,7 +63,7 @@
 #define ITARGETSR_FIELD_BITS	8
 #define ITARGETSR_FIELD_MASK	0xff
 
-/* Maximum number of interrups a GIC can support */
+/* Maximum number of interrupts a GIC can support */
 #define GIC_MAX_INTS		1020
 
 #define GICC_IAR_IT_ID_MASK	0x3ff

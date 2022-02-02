@@ -337,7 +337,7 @@ static void init_vcore(tee_mm_pool_t *mm_vcore)
 	size_t size = TEE_RAM_VA_SIZE;
 
 #ifdef CFG_CORE_SANITIZE_KADDRESS
-	/* Carve out asan memory, flat maped after core memory */
+	/* Carve out asan memory, flat mapped after core memory */
 	if (begin + size > ASAN_SHADOW_PA)
 		size = ASAN_MAP_PA - begin;
 #endif

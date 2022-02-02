@@ -178,7 +178,7 @@ static TEE_Result user_ta_enter(struct ts_session *session,
 		res = TEE_ERROR_TARGET_DEAD;
 	} else {
 		/*
-		 * According to GP spec the origin should allways be set to
+		 * According to GP spec the origin should always be set to
 		 * the TA after TA execution
 		 */
 		ta_sess->err_origin = TEE_ORIGIN_TRUSTED_APP;

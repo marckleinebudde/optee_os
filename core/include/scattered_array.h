@@ -47,7 +47,7 @@
  * Defines an item in a scattered array, sorted based on @order.
  * @array_name:   Name of the scattered array
  * @order:        Tag on which this item is sorted in the array
- * @element_type: The type of the elemenet
+ * @element_type: The type of the element
  */
 #define SCATTERED_ARRAY_DEFINE_ITEM_ORDERED(array_name, order, element_type) \
 	__SCT_ARRAY_DEF_ITEM1(array_name, order, __COUNTER__, element_type)
@@ -64,7 +64,7 @@
 /*
  * Defines an item in a scattered array
  * @array_name:   Name of the scattered array
- * @element_type: The type of the elemenet
+ * @element_type: The type of the element
  */
 #define SCATTERED_ARRAY_DEFINE_ITEM(array_name, element_type) \
 	__SCT_ARRAY_DEF_ITEM1(array_name, 0, __COUNTER__, element_type)
@@ -80,7 +80,7 @@
 /*
  * Returns the first element in a scattered array
  * @array_name:   Name of the scattered array
- * @element_type: The type of the elemenet
+ * @element_type: The type of the element
  */
 #define SCATTERED_ARRAY_BEGIN(array_name, element_type) (__extension__({ \
 		static const element_type __scattered_array_begin[0] __unused \
@@ -94,7 +94,7 @@
 /*
  * Returns one entry past the last element in a scattered array
  * @array_name:   Name of the scattered array
- * @element_type: The type of the elemenet
+ * @element_type: The type of the element
  */
 #define SCATTERED_ARRAY_END(array_name, element_type) (__extension__({ \
 		static const element_type __scattered_array_end[0] __unused \
@@ -108,7 +108,7 @@
  * Loop over all elements in the scattered array
  * @elem:	Iterator
  * @array_name:   Name of the scattered array
- * @element_type: The type of the elemenet
+ * @element_type: The type of the element
  */
 #define SCATTERED_ARRAY_FOREACH(elem, array_name, element_type) \
 	for ((elem) = SCATTERED_ARRAY_BEGIN(array_name, element_type); \

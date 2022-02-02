@@ -304,7 +304,7 @@ static TEE_Result i2c_read_data(uint8_t bid, uint8_t *buf, int len)
 
 	/*
 	 * A data transfer ends when the master signals a stop; for a master
-	 * receiver to terminate a transfer it must inform the slave transmiter
+	 * receiver to terminate a transfer it must inform the slave transmitter
 	 * by not acknowledging the last data byte. This is done by setting the
 	 * transmit acknowledge bit before reading the next-to-last byte.
 	 */

@@ -2,7 +2,7 @@
 /*
  * Copyright 2018-2019 NXP
  *
- * Brief   CAAM Job Rings Hardware Abstration Layer header.
+ * Brief   CAAM Job Rings Hardware Abstraction Layer header.
  */
 #ifndef __CAAM_HAL_JR_H__
 #define __CAAM_HAL_JR_H__

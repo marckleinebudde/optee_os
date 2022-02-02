@@ -106,7 +106,7 @@ struct tee_fs_htree;
  * @hash:	hash of root node, ignored if NULL
  * @uuid:	uuid of requesting TA, may be NULL if not from a TA
  * @stor:	storage description
- * @stor_aux:	auxilary pointer supplied to callbacks in struct
+ * @stor_aux:	auxiliary pointer supplied to callbacks in struct
  *		tee_fs_htree_storage
  * @ht:		returned hash tree on success
  */

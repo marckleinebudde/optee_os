@@ -3,7 +3,7 @@
  * Copyright (c) 2017-2019, STMicroelectronics
  *
  * STM32 GPIO driver relies on platform util fiunctions to get base address
- * and clock ID of the GPIO banks. The drvier API allows to retrieve pin muxing
+ * and clock ID of the GPIO banks. The driver API allows to retrieve pin muxing
  * configuration for given nodes and load them at runtime. A pin control
  * instance provide an active and a standby configuration. Pin onwer is
  * responsible to load to expected configuration during PM state transitions

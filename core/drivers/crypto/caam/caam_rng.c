@@ -34,7 +34,7 @@
  * Status of the data generation
  */
 enum rngsta {
-	DATA_EMPTY = 0, /* Data bufer empty */
+	DATA_EMPTY = 0, /* Data buffer empty */
 	DATA_ONGOING,   /* Data generation on going */
 	DATA_FAILURE,   /* Error during data generation */
 	DATA_OK,        /* Data generation complete with success */
@@ -429,7 +429,7 @@ enum caam_status caam_rng_instantiation(void)
 	uint32_t sh_mask = 0;
 	uint32_t inc_delay = 0;
 
-	RNG_TRACE("RNG Instantation");
+	RNG_TRACE("RNG Instantiation");
 
 	/* Check if RNG is already instantiated */
 	retstatus = caam_hal_rng_instantiated(rng_privdata->baseaddr);
@@ -452,14 +452,14 @@ enum caam_status caam_rng_instantiation(void)
 	 *    |----------------------|
 	 *    | Header               | = 1
 	 *    |----------------------|
-	 *    | First instantation   | = 1
+	 *    | First instantiation  | = 1
 	 *    |----------------------|-------------------------
 	 *    | wait complete        | = 1
 	 *    |----------------------|
 	 *    | Clear done status    |       Repeat (nb_sh - 1)
 	 *    |                      | = 2
 	 *    |----------------------|
-	 *    | next SH instantation | = 1
+	 *    | next SH instantiation| = 1
 	 *    |----------------------|-------------------------
 	 *    | wait complete        | = 1
 	 *    |----------------------|

@@ -1808,7 +1808,7 @@ bool tee_pager_handle_fault(struct abort_info *ai)
 		/*
 		 * Nothing more to do with the abort. The problem
 		 * could already have been dealt with from another
-		 * core or if ret is false the TA will be paniced.
+		 * core or if ret is false the TA will be panicked.
 		 */
 		goto out;
 	}

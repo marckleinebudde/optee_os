@@ -86,7 +86,7 @@ enum caam_status caam_jr_dequeue(uint32_t job_ids, unsigned int timeout_ms);
 
 /*
  * Enqueues a job in the Job Ring input queue and either wait until job
- * completion or if job is asynchrnous, returns immediately (if status
+ * completion or if job is asynchronous, returns immediately (if status
  * success, the output parameter job_id is filled with the Job Id pushed)
  *
  * @jobctx  Reference to the job context

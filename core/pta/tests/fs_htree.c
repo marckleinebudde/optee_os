@@ -270,7 +270,7 @@ static TEE_Result htree_test_rewrite(struct test_aux *aux, size_t num_blocks,
 	CHECK_RES(res, goto out);
 
 	/*
-	 * Intialize all blocks and verify that they read back as
+	 * Initialize all blocks and verify that they read back as
 	 * expected.
 	 */
 	res = do_range(write_block, &ht, 0, num_blocks, salt);
@@ -505,7 +505,7 @@ static TEE_Result test_corrupt_type(const TEE_UUID *uuid, uint8_t *hash,
 			/*
 			 * do_range(read_block,) is supposed to detect the
 			 * error. If TEE_ERROR_TIME_NOT_SET is returned
-			 * read_block() was acutally able to get some data,
+			 * read_block() was actually able to get some data,
 			 * but the data was incorrect.
 			 *
 			 * If res == TEE_SUCCESS or

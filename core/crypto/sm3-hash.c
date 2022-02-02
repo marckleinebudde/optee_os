@@ -60,7 +60,7 @@ static TEE_Result op_sm3_hash_final(struct crypto_hash_ctx *ctx,
 		return TEE_ERROR_BAD_PARAMETERS;
 
 	if (hash_size > len)
-		tmp_digest = block_digest; /* use a tempory buffer */
+		tmp_digest = block_digest; /* use a temporary buffer */
 	else
 		tmp_digest = digest;
 

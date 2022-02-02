@@ -25,7 +25,7 @@ TEE_Result drvcrypt_rsa_mgf1(struct drvcrypt_rsa_mgf *mgf_data)
 	CRYPTO_TRACE("Generate Mask (%zu bytes) with seed of %zu bytes",
 		     mgf_data->mask.length, mgf_data->seed.length);
 
-	/* Calculate the number of complet hash digest */
+	/* Calculate the number of complete hash digest */
 	lastBlock_size = mgf_data->mask.length % mgf_data->digest_size;
 	if (lastBlock_size) {
 		/* Allocate a digest buffer for the last block */

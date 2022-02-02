@@ -1589,13 +1589,13 @@ static void set_pg_region(struct core_mmu_table_info *dir_info,
 			 */
 			while ((*pgt)->vabase < pg_info->va_base) {
 				*pgt = SLIST_NEXT(*pgt, link);
-				/* We should have alloced enough */
+				/* We should have allocated enough */
 				assert(*pgt);
 			}
 			assert((*pgt)->vabase == pg_info->va_base);
 			pg_info->table = (*pgt)->tbl;
 #else
-			assert(*pgt); /* We should have alloced enough */
+			assert(*pgt); /* We should have allocated enough */
 			pg_info->table = (*pgt)->tbl;
 			*pgt = SLIST_NEXT(*pgt, link);
 #endif

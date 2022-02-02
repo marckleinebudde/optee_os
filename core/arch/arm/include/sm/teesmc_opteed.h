@@ -13,7 +13,7 @@
  * All SMC Function IDs indicates SMC32 Calling Convention but will carry
  * full 64 bit values in the argument registers if invoked from Aarch64
  * mode. This violates the SMC Calling Convention, but since this
- * convention only coveres API towards Normwal World it's something that
+ * convention only covers API towards Normwal World it's something that
  * only concerns the OP-TEE Dispatcher in ARM Trusted Firmware and OP-TEE
  * OS at Secure EL1.
  */

@@ -2,7 +2,7 @@
 /*
  * Copyright 2018-2019 NXP
  *
- * Brief   CAAM Job Rings Hardware Abstration Layer.
+ * Brief   CAAM Job Rings Hardware Abstraction Layer.
  *         Implementation of primitives to access HW.
  */
 #include <caam_common.h>

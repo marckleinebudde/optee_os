@@ -192,7 +192,7 @@ enum pkcs11_rc modify_attributes_list(struct obj_attrs **dst,
  * @attr:	holds the retrieved 32-bit attribute value
  *
  * If attribute is not found, return PKCS11_RV_NOT_FOUND.
- * If the retreived attribute doesn't have a 4 byte sized value
+ * If the retrieved attribute doesn't have a 4 byte sized value
  * PKCS11_CKR_GENERAL_ERROR is returned.
  *
  * Return PKCS11_CKR_OK or PKCS11_RV_NOT_FOUND on success, or a PKCS11 return
@@ -230,7 +230,7 @@ enum pkcs11_rc attributes_match_add_reference(struct obj_attrs **head,
  * get_class() - Get class ID of an object
  * @head:	Pointer to serialized attributes
  *
- * Returns the class ID of an object on succes or returns
+ * Returns the class ID of an object on success or returns
  * PKCS11_CKO_UNDEFINED_ID on error.
  */
 static inline enum pkcs11_class_id get_class(struct obj_attrs *head)

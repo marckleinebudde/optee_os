@@ -267,7 +267,7 @@ static TEE_Result do_gen_keypair(struct ecc_keypair *key, size_t key_size)
 	xy.length = 2 * (key_size / 8);
 	xy.paddr = d.paddr + key_size / 8;
 
-	/* Build the descriptor using Predifined ECC curve */
+	/* Build the descriptor using Predefined ECC curve */
 	caam_desc_init(desc);
 	caam_desc_add_word(desc, DESC_HEADER(0));
 	caam_desc_add_word(desc, PDB_PKGEN_PD1 | PDB_ECC_ECDSEL(curve));
@@ -401,7 +401,7 @@ static TEE_Result do_sign(struct drvcrypt_sign_data *sdata)
 
 	caam_dmaobj_cache_push(&sign_c);
 
-	/* Build the descriptor using Predifined ECC curve */
+	/* Build the descriptor using Predefined ECC curve */
 	caam_desc_init(desc);
 	caam_desc_add_word(desc, DESC_HEADER(0));
 	caam_desc_add_word(desc, PDB_PKSIGN_PD1 | PDB_ECC_ECDSEL(curve) |
@@ -535,7 +535,7 @@ static TEE_Result do_verify(struct drvcrypt_sign_data *sdata)
 		goto out;
 	}
 
-	/* Build the descriptor using Predifined ECC curve */
+	/* Build the descriptor using Predefined ECC curve */
 	caam_desc_init(desc);
 	caam_desc_add_word(desc, DESC_HEADER(0));
 	caam_desc_add_word(desc, PDB_PKVERIFY_PD1 | PDB_ECC_ECDSEL(curve) |
@@ -646,7 +646,7 @@ static TEE_Result do_shared_secret(struct drvcrypt_secret_data *sdata)
 
 	caam_dmaobj_cache_push(&secret);
 
-	/* Build the descriptor using Predifined ECC curve */
+	/* Build the descriptor using Predefined ECC curve */
 	caam_desc_init(desc);
 	caam_desc_add_word(desc, DESC_HEADER(0));
 	caam_desc_add_word(desc, PDB_SHARED_SECRET_PD1 | PDB_ECC_ECDSEL(curve) |

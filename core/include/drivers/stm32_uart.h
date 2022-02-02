@@ -30,7 +30,7 @@ void stm32_uart_init(struct stm32_uart_pdata *pd, vaddr_t base);
  * stm32_uart_init_from_dt_node - Initialize a UART instance from a DTB node
  * @fdt: DTB base address
  * @node: Target node offset in the DTB
- * Returns an alloced (malloc) and inited UART platform data on success or NULL
+ * Returns an allocated (malloc) and inited UART platform data on success or NULL
  *
  * This function gets a STM32 UART configuration directives from a DTB node
  * and initializes a UART driver instance.

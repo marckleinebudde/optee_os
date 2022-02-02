@@ -324,7 +324,7 @@ TEE_Result crypto_rng_init(const void *data, size_t dlen);
  * @data:	Data associated with the event
  * @dlen:	Length of @data
  *
- * @sid controls whether the event is merly queued in a ring buffer or if
+ * @sid controls whether the event is merely queued in a ring buffer or if
  * it's added to one of the pools directly. If CRYPTO_RNG_SRC_IS_QUICK() is
  * true (lowest bit set) events are queue otherwise added to corresponding
  * pool. If CRYPTO_RNG_SRC_IS_QUICK() is false, eventual queued events are

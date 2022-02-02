@@ -785,7 +785,7 @@ TEE_Result caam_dmaobj_output_sgtbuf(struct caamdmaobj *obj, void *data,
 		 * start/end address are cache aligned.
 		 * If the @min_length is less than a cache line size, we
 		 * can initializing the output buffer with the cache line size
-		 * to prevent end buffer misalignement so reallocate a not used
+		 * to prevent end buffer misalignment so reallocate a not used
 		 * buffer.
 		 */
 		size = MAX(min_length, dcache_get_line_size());

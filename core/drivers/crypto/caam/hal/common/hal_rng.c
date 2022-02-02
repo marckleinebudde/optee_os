@@ -2,7 +2,7 @@
 /*
  * Copyright 2018-2021 NXP
  *
- * Brief   CAAM Random Number Generator Hardware Abstration Layer.
+ * Brief   CAAM Random Number Generator Hardware Abstraction Layer.
  *         Implementation of primitives to access HW.
  */
 #include <caam_hal_ctrl.h>

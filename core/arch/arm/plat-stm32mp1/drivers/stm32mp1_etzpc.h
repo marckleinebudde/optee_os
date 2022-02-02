@@ -6,7 +6,7 @@
 #ifndef __STM32MP1_ETZPC_H
 #define __STM32MP1_ETZPC_H
 
-/* Define DECPROT IDs for stm32mp1 familly */
+/* Define DECPROT IDs for stm32mp1 family */
 #define STM32MP1_ETZPC_STGENC_ID	0
 #define STM32MP1_ETZPC_BKPSRAM_ID	1
 #define STM32MP1_ETZPC_IWDG1_ID		2

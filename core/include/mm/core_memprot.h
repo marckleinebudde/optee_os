@@ -17,11 +17,11 @@
  * RAM" and some other fancy attributes.
  *
  * DO NOT use 'buf_is(Secure, buffer)==false' as a assumption that buffer is
- * UnSecured ! This is NOT a valid asumption ! A buffer is certified UnSecured
+ * UnSecured ! This is NOT a valid assumption ! A buffer is certified UnSecured
  * only if 'buf_is(UnSecure, buffer)==true'.
  */
 
-/* memory atttributes */
+/* memory attributes */
 enum buf_is_attr {
 	CORE_MEM_CACHED,
 	CORE_MEM_NSEC_SHM,

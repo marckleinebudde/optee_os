@@ -23,7 +23,7 @@ const char trace_ext_prefix[]  = "TA";
 #define TA_DESCRIPTION "Undefined description"
 #endif
 
-/* exprted to user_ta_header.c, built within TA */
+/* exported to user_ta_header.c, built within TA */
 struct utee_params;
 
 #ifdef ARM32
@@ -121,7 +121,7 @@ const struct user_ta_property ta_props[] = {
 	 TA_DESCRIPTION},
 
 /*
- * Extended propietary properties, name of properties must not begin with
+ * Extended proprietary properties, name of properties must not begin with
  * "gpd."
  */
 #ifdef TA_CURRENT_TA_EXT_PROPERTIES

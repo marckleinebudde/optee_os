@@ -14,7 +14,7 @@ struct pkcs11_client;
 struct pkcs11_session;
 
 /*
- * Util routines for serializes unformated arguments in a client memref
+ * Util routines for serializes unformatted arguments in a client memref
  */
 struct serialargs {
 	char *start;
@@ -129,7 +129,7 @@ enum pkcs11_rc serialargs_get_session_from_handle(struct serialargs *args,
  * @bstart:	points to start of a buffer or NULL, *@bstart is updated
  *		with the new buffer if changed
  * @blen:	size of the *@bstart buffer, updated when data is added
- * @data:	data to appen to the buffer
+ * @data:	data to append to the buffer
  * @len:	size of the @data buffer
  *
  * Returns PKCS11_CKR_OK on success or an error code from enum pkcs11_rc on

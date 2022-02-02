@@ -253,7 +253,7 @@ static void do_hmac_free(struct crypto_mac_ctx *ctx)
 }
 
 /*
- * Copy sofware HMAC context
+ * Copy software HMAC context
  * Call common copy operation between hash and HMAC
  *
  * @dst_ctx  [out] Reference the context destination

@@ -342,7 +342,7 @@ static enum spi_result ls_dspi_txrx16(struct spi_chip *chip, uint16_t *wdata,
 }
 
 /*
- * Statrt DSPI module
+ * Start DSPI module
  * chip:	spi_chip instance
  */
 static void ls_dspi_start(struct spi_chip *chip)

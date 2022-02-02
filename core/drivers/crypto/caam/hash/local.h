@@ -63,7 +63,7 @@ TEE_Result caam_hash_hmac_final(struct hashctx *ctx, uint8_t *digest,
 				size_t len);
 
 /*
- * Copy sofware hashing context
+ * Copy software hashing context
  *
  * @dst  [out] Reference the destination context
  * @src  Reference the source context

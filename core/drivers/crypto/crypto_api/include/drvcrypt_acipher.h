@@ -11,7 +11,7 @@
 #include <tee_api_types.h>
 
 /*
- * Assymetric Cipher RSA Algorithm enumerate
+ * Asymmetric Cipher RSA Algorithm enumerate
  */
 enum drvcrypt_rsa_id {
 	DRVCRYPT_RSA_NOPAD = 0,	   /* RSA Algo mode NO PAD */

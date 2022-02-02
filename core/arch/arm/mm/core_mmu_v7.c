@@ -45,10 +45,10 @@
  * MMU related values
  */
 
-/* Sharable */
+/* Shareable */
 #define TEE_MMU_TTB_S           (1 << 1)
 
-/* Not Outer Sharable */
+/* Not Outer Shareable */
 #define TEE_MMU_TTB_NOS         (1 << 5)
 
 /* Normal memory, Inner Non-cacheable */

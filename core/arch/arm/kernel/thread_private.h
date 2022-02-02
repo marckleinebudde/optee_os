@@ -197,7 +197,7 @@ void thread_unlock_global(void);
 
 
 /*
- * Suspends current thread and temorarily exits to non-secure world.
+ * Suspends current thread and temporarily exits to non-secure world.
  * This function returns later when non-secure world returns.
  *
  * The purpose of this function is to request services from non-secure

@@ -76,10 +76,10 @@ struct shdr_bootstrap_ta {
 
 /**
  * struct shdr_encrypted_ta - encrypted TA header
- * @enc_algo:	authenticated encyption algorithm, defined by symmetric key
+ * @enc_algo:	authenticated encryption algorithm, defined by symmetric key
  *		algorithms TEE_ALG_* from TEE Internal API
  *		specification
- * @flags:	authenticated encyption flags
+ * @flags:	authenticated encryption flags
  * @iv_size:	size of the initialization vector
  * @tag_size:	size of the authentication tag
  * @iv:		initialization vector

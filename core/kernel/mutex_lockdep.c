@@ -20,7 +20,7 @@ static unsigned int graph_lock = SPINLOCK_UNLOCK;
 
 /*
  * One queue per thread, contains the mutexes the thread owns at any point in
- * time (in aquire order)
+ * time (in acquire order)
  */
 static struct lockdep_lock_head owned[CFG_NUM_THREADS];
 

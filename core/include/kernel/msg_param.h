@@ -62,7 +62,7 @@ msg_param_mobj_from_noncontig(paddr_t buf_ptr __unused, size_t size __unused,
 #endif
 
 /**
- * msg_param_attr_is_tmem - helper functions that cheks if attribute is tmem
+ * msg_param_attr_is_tmem - helper functions that checks if attribute is tmem
  *
  * @attr - attribute to check
  *

@@ -60,7 +60,7 @@ static TEE_Result op_sm3_hmac_final(struct crypto_mac_ctx *ctx, uint8_t *digest,
 		return TEE_ERROR_BAD_PARAMETERS;
 
 	if (hmac_size > len)
-		tmp_digest = block_digest; /* use a tempory buffer */
+		tmp_digest = block_digest; /* use a temporary buffer */
 	else
 		tmp_digest = digest;
 

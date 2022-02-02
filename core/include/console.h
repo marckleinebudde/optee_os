@@ -19,7 +19,7 @@ void register_serial_console(struct serial_chip *chip);
 
 #ifdef CFG_DT
 /*
- * Get console info from a reacheable DTB. Check the embedded DTB and fall
+ * Get console info from a reachable DTB. Check the embedded DTB and fall
  * back to the external DTB.
  *
  * If the DTB does not specify a chosen (or secure-chosen) node, we assume

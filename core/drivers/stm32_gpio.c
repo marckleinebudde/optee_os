@@ -128,7 +128,7 @@ static void set_gpio_cfg(uint32_t bank, uint32_t pin, struct gpio_cfg *cfg)
 				cfg->af << shift);
 	}
 
-	/* Load GPIO Output direction confuguration, 1bit */
+	/* Load GPIO Output direction configuration, 1bit */
 	io_clrsetbits32(base + GPIO_ODR_OFFSET, BIT(pin), cfg->od << pin);
 
 	clk_disable(clk);

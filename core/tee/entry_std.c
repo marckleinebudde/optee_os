@@ -310,7 +310,7 @@ static void copy_out_param(struct tee_ta_param *ta_param, uint32_t num_params,
  *
  * Returns
  * false : mandatory parameter wasn't found or malformatted
- * true  : paramater found and OK
+ * true  : parameter found and OK
  */
 static TEE_Result get_open_session_meta(size_t num_params,
 					struct optee_msg_param *params,

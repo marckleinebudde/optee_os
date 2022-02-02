@@ -60,7 +60,7 @@
 #define  URXD_BRK        (1<<11)
 #define  URXD_PRERR      (1<<10)
 #define  URXD_RX_DATA    (0xFF)
-#define  UCR1_ADEN       (1<<15) /* Auto dectect interrupt */
+#define  UCR1_ADEN       (1<<15) /* Auto detect interrupt */
 #define  UCR1_ADBR       (1<<14) /* Auto detect baud rate */
 #define  UCR1_TRDYEN     (1<<13) /* Transmitter ready interrupt enable */
 #define  UCR1_IDEN       (1<<12) /* Idle condition interrupt */

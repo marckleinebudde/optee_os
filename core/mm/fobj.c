@@ -510,7 +510,7 @@ const struct fobj_ops ops_ro_paged __weak __rodata_unpaged("ops_ro_paged") = {
  * have its relocation information applied before it can be used.
  *
  * Only the relative relocations are supported, this allows a rather compact
- * represenation of the needed relocation information in this struct.
+ * representation of the needed relocation information in this struct.
  * r_offset is replaced with the offset into the page that need to be updated,
  * this number can never be larger than SMALL_PAGE_SIZE so a uint16_t can be
  * used to represent it.

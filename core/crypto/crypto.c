@@ -472,7 +472,7 @@ size_t crypto_bignum_num_bits(struct bignum *a __unused)
  * crypto_bignum_allocate() and crypto_bignum_bin2bn() failing should be
  * enough to guarantee that the functions calling this function aren't
  * called, but just in case add a panic() here to avoid unexpected
- * behavoir.
+ * behavior.
  */
 static void bignum_cant_happen(void)
 {

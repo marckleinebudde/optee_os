@@ -63,7 +63,7 @@ static void l2cc_mutex_set(void *mutex)
  * - if NSec did not register a L2 mutex, default allocate it in public RAM.
  * - if NSec disables L2 mutex, disable the current mutex and unregister it.
  *
- * Enable L2CC: NSec allows teecore to run safe outer maintance
+ * Enable L2CC: NSec allows teecore to run safe outer maintenance
  *		with shared mutex.
  * Disable L2CC: NSec will run outer maintenance with locking
  *               shared mutex. teecore cannot run outer maintenance.

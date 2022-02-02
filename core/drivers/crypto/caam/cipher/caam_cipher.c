@@ -558,7 +558,7 @@ out:
  * If there is a context, the context is saved only when a
  * full block is done.
  * The partial block (if not the last block) is encrypted or
- * decrypted to return the result and it's saved to be concatened
+ * decrypted to return the result and it's saved to be concatenated
  * to next data to rebuild a full block.
  *
  * @dupdate  Data update object

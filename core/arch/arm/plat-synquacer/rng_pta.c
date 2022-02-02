@@ -68,7 +68,7 @@
  * published estimation framework such as NIST.SP.800-90B and was tested
  * on a very small set of physical samples. Instead we have adopted what
  * we believe to be a conservative estimate and partnered it with a
- * fairly agressive health check.
+ * fairly aggressive health check.
  *
  * Generating the SHA512/256 hash takes 24uS and will be run by an
  * interrupt handler that pre-empts the normal world.

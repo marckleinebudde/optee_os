@@ -36,7 +36,7 @@
  * speed_hz:		Default SCK frequency=1mhz
  * num_chipselect:	chip/slave selection
  * slave_bus:		bus value of slave
- * slave_cs:		chip slect value of slave
+ * slave_cs:		chip select value of slave
  * slave_speed_max_hz:	max spped of slave
  * slave_mode:		mode of slave
  * slave_data_size_bits:Data size to be transferred (8 or 16 bits)

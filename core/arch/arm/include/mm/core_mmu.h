@@ -463,7 +463,7 @@ void core_mmu_set_user_map(struct core_mmu_user_map *map);
 /*
  * struct core_mmu_table_info - Properties for a translation table
  * @table:	Pointer to translation table
- * @va_base:	VA base address of the transaltion table
+ * @va_base:	VA base address of the translation table
  * @level:	Translation table level
  * @shift:	The shift of each entry in the table
  * @num_entries: Number of entries in this table.
@@ -534,7 +534,7 @@ void core_mmu_get_entry(struct core_mmu_table_info *tbl_info, unsigned idx,
  * core_mmu_va2idx() - Translate from virtual address to table index
  * @tbl_info:	Translation table properties
  * @va:		Virtual address to translate
- * @returns index in transaltion table
+ * @returns index in translation table
  */
 static inline unsigned core_mmu_va2idx(struct core_mmu_table_info *tbl_info,
 			vaddr_t va)
@@ -583,9 +583,9 @@ static inline bool core_mmu_is_dynamic_vaspace(struct tee_mmap_region *mm)
  * @vstart:	Virtual address where mapping begins
  * @pages:	Array of page addresses
  * @num_pages:	Number of pages
- * @memtype:	Type of memmory to be mapped
+ * @memtype:	Type of memory to be mapped
  *
- * Note: This function asserts that pages are not mapped executeable for
+ * Note: This function asserts that pages are not mapped executable for
  * kernel (privileged) mode.
  *
  * @returns:	TEE_SUCCESS on success, TEE_ERROR_XXX on error
@@ -598,9 +598,9 @@ TEE_Result core_mmu_map_pages(vaddr_t vstart, paddr_t *pages, size_t num_pages,
  * @vstart:	Virtual address where mapping begins
  * @pstart:	Physical address of the first page
  * @num_pages:	Number of pages
- * @memtype:	Type of memmory to be mapped
+ * @memtype:	Type of memory to be mapped
  *
- * Note: This function asserts that pages are not mapped executeable for
+ * Note: This function asserts that pages are not mapped executable for
  * kernel (privileged) mode.
  *
  * @returns:	TEE_SUCCESS on success, TEE_ERROR_XXX on error
@@ -634,7 +634,7 @@ void core_mmu_get_mem_by_type(enum teecore_memtypes type, vaddr_t *s,
 
 enum teecore_memtypes core_mmu_get_type_by_pa(paddr_t pa);
 
-/* routines to retreive shared mem configuration */
+/* routines to retrieve shared mem configuration */
 static inline bool core_mmu_is_shm_cached(void)
 {
 	return core_mmu_type_to_attr(MEM_AREA_NSEC_SHM) &

@@ -6,7 +6,7 @@
  * SM4 Encryption algorithm (SMS4 algorithm)
  * GM/T 0002-2012 Chinese National Standard ref:http://www.oscca.gov.cn/
  * thanks to Xyssl
- * thnaks and refers to http://hi.baidu.com/numax/blog/item/80addfefddfb93e4cf1b3e61.html
+ * thanks and refers to http://hi.baidu.com/numax/blog/item/80addfefddfb93e4cf1b3e61.html
  * author:goldboar
  * email:goldboar@163.com
  * 2012-4-20

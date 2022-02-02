@@ -83,7 +83,7 @@ static const uint8_t sqrt_value[] = {
  *
  * These can be used to compute GCD(prime, smallprime) before the Miller
  * Rabin; this will weed out those candidates with 'small' primes before doing
- * the costly modular exponentation inside of Miller-Rabin.  (If the result is
+ * the costly modular exponentiation inside of Miller-Rabin.  (If the result is
  * not one, then the candidate has as a factor at least one of the small primes
  * in the product).
  *

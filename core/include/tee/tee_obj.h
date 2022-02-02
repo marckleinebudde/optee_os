@@ -20,7 +20,7 @@ struct tee_obj {
 	uint32_t have_attrs;	/* bitfield identifying set properties */
 	void *attr;
 	size_t ds_pos;
-	struct tee_pobj *pobj;	/* ptr to persistant object */
+	struct tee_pobj *pobj;	/* ptr to persistent object */
 	struct tee_file_handle *fh;
 };
 

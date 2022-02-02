@@ -556,7 +556,7 @@ static TEE_Result do_sign(struct drvcrypt_sign_data *sdata, size_t l_bytes,
 	caam_dmaobj_cache_push(&sign_c);
 
 	/*
-	 * Build the descriptor using Predifined ECC curve
+	 * Build the descriptor using Predefined ECC curve
 	 */
 	caam_desc_init(desc);
 	caam_desc_add_word(desc, DESC_HEADER(0));
@@ -696,7 +696,7 @@ static TEE_Result do_verify(struct drvcrypt_sign_data *sdata, size_t l_bytes,
 	}
 
 	/*
-	 * Build the descriptor using Predifined ECC curve
+	 * Build the descriptor using Predefined ECC curve
 	 */
 	caam_desc_init(desc);
 	caam_desc_add_word(desc, DESC_HEADER(0));

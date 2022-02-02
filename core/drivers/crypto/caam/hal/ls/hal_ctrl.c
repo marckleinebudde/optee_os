@@ -2,7 +2,7 @@
 /*
  * Copyright 2019 NXP
  *
- * Brief   CAAM Controller Hardware Abstration Layer.
+ * Brief   CAAM Controller Hardware Abstraction Layer.
  *         Implementation of primitives to access HW.
  */
 #include <caam_hal_ctrl.h>

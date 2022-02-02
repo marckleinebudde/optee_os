@@ -697,7 +697,7 @@ static TEE_Result op_attr_bignum_to_user(void *attr,
 	if (res != TEE_SUCCESS)
 		return res;
 	/*
-	* Write the bignum (wich raw data points to) into an array of
+	* Write the bignum (which raw data points to) into an array of
 	* bytes (stored in buffer)
 	*/
 	crypto_bignum_bn2bin(*bn, buffer);

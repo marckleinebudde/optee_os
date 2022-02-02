@@ -165,9 +165,9 @@ static TEE_Result read_compressed(struct ts_store_handle *h, void *data,
 	 * inflate() returns:
 	 * - Z_OK when progress was made, but neither the end of the input
 	 *   stream nor the end of the output buffer were met.
-	 * - Z_STREAM_END when the end of the intput stream was reached.
+	 * - Z_STREAM_END when the end of the input stream was reached.
 	 * - Z_BUF_ERROR when there is still input to process but the output
-	 *   buffer is full (not a "hard" error, decompression can proceeed
+	 *   buffer is full (not a "hard" error, decompression can proceed
 	 *   later).
 	 */
 	do {

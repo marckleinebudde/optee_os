@@ -643,7 +643,7 @@ TEE_Result dcp_sha_do_final(struct dcp_hash_data *hashdata, uint8_t *digest,
 
 	dcp_free(&hashdata->ctx);
 
-	/* Reset hashdata strcuture */
+	/* Reset hashdata structure */
 	hashdata->initialized = false;
 
 	dcp_unlock_channel(hashdata->dcp_data.channel);

@@ -499,8 +499,8 @@ static inline void thread_user_clear_vfp(struct user_mode_ctx *uctx __unused)
  * @user_sp:	Assigned sp value in user mode
  * @user_func:	Function to execute in user mode
  * @is_32bit:   True if TA should execute in Aarch32, false if Aarch64
- * @exit_status0: Pointer to opaque exit staus 0
- * @exit_status1: Pointer to opaque exit staus 1
+ * @exit_status0: Pointer to opaque exit status 0
+ * @exit_status1: Pointer to opaque exit status 1
  *
  * This functions enters user mode with the argument described above,
  * @exit_status0 and @exit_status1 are filled in by thread_unwind_user_mode()
@@ -620,7 +620,7 @@ static inline bool __nostackcheck get_stack_hard_limits(vaddr_t *start,
 bool thread_is_in_normal_mode(void);
 
 /*
- * Returns true if previous exeception also was in abort mode.
+ * Returns true if previous exception also was in abort mode.
  *
  * Note: it's only valid to call this function from an abort exception
  * handler before interrupts has been re-enabled.

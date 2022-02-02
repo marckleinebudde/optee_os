@@ -303,7 +303,7 @@ static void init_device_from_hw_config(struct etzpc_instance *dev,
 	dev->num_per_sec = hwcfg.num_per_sec;
 	dev->num_ahb_sec = hwcfg.num_ahb_sec;
 
-	DMSG("ETZPC revison 0x02%" PRIu8 ", per_sec %u, ahb_sec %u, tzma %u",
+	DMSG("ETZPC revision 0x02%" PRIu8 ", per_sec %u, ahb_sec %u, tzma %u",
 	     io_read8(etzpc_base() + ETZPC_VERR),
 	     hwcfg.num_per_sec, hwcfg.num_ahb_sec, hwcfg.num_tzma);
 

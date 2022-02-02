@@ -11,7 +11,7 @@
 #include <tee/tee_fs.h>
 
 /*
- * Persistant Object Functions
+ * Persistent Object Functions
  */
 TEE_Result syscall_storage_obj_open(unsigned long storage_id, void *object_id,
 			size_t object_id_len, unsigned long flags,

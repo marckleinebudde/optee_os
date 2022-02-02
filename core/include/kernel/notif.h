@@ -58,7 +58,7 @@
  *
  * Note that while a @NOTIF_EVENT_STOPPED is being delivered at the same
  * time may a @NOTIF_EVENT_STARTED be delivered again so a driver is
- * required to sychronize accesses to its internal state.
+ * required to synchronize accesses to its internal state.
  */
 enum notif_event {
 	NOTIF_EVENT_STARTED,
@@ -118,7 +118,7 @@ static inline void notif_send_async(uint32_t value __unused)
 #endif
 
 /*
- * Send a sychronous value, note that it must be <= NOTIF_VALUE_MAX. The
+ * Send a synchronous value, note that it must be <= NOTIF_VALUE_MAX. The
  * notification is synchronous even if the value happens to belong in the
  * asynchronous range.
  */

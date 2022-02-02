@@ -137,7 +137,7 @@ void clk_disable(struct clk *clk);
  * This function is useful during specific system sequences where core
  * executes atomically (primary core boot, some low power sequences).
  *
- * @clk: Clock refernece
+ * @clk: Clock reference
  */
 bool clk_is_enabled(struct clk *clk);
 
